@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@font-face {
+    font-family: 'OhMyYouth';
+    src: url(../Fontes/Sheila\ Crayon.ttf) format(opentype);
+    font-weight: normal;
+}
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'OhMyYouth', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font2);
+    padding-top: 55px;
+    font-size: 7vw;
+    line-height: 1.5em;
+}
+
+header > p {
+    padding-bottom: 55px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    font-family: var(--font3);
+    line-height: 2em;
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(../imagens/YANGYANG.jpeg);
+    background-size: cover;
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/HENDERY\ 1.jpeg);
+    background-size: cover;
+    background-position: right center;
+}
+
+section#img02 > p {
+    padding-right: 110px;
+}
+
+
+footer {
+     background-color: black;
+     color: white;
+     text-align: center;
+     padding: 10px;
+}
